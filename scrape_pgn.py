@@ -14,9 +14,6 @@ class parseChessComPGN:
         self.archivesUrl = self.baseUrl + "archives"
 
     def get_monthly_pgn(self, download_path: str) -> None:
-        import pdb
-
-        pdb.set_trace()
         if not os.path.exists(download_path):
             os.makedirs(download_path)
         f = urllib.request.urlopen(self.archivesUrl)
